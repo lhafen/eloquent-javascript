@@ -1,0 +1,21 @@
+for(let i = 1; i <= 100; i++){
+    //Check for division by three
+    var divideByThree = i % 3;
+    //Check for division by five
+    var divideByFive = i % 5;
+    //If it's divisible by 3 but NOT divisible by 5
+    if (divideByThree === 0 && divideByFive !== 0){
+        console.log("Fizz");
+    }
+    //If it's divisible by 5 but NOT divisible by 3
+    else if (divideByFive === 0 && divideByThree !== 0){
+        console.log("Buzz");
+    }
+    //If it's divisible by BOTH 3 and 5
+    else if (divideByFive === 0 && divideByThree === 0){
+        console.log("FizzBuzz");
+    }
+    //If it's not divisible by EITHER 3 or 5
+    else
+        console.log(i);
+}
