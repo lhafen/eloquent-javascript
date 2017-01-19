@@ -1,0 +1,18 @@
+/*
+First exercise from Eloquent JavaScript.
+
+Challenge was to write a script that produces
+a triangle of hash marks.
+*/
+
+//Variables
+var hashTotal = "#";     //Create a hash mark variable
+var nextHash = "#";      //Create a var to hold the additional hash marks
+
+//Set a loop to run 7 times
+for (let i = 0; i < 7 ; i++){
+    //Display the hash
+    console.log(hashTotal);
+    //Add an additional hashmark to hash
+    hashTotal = nextHash + hashTotal;
+}
