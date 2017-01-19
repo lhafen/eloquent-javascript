@@ -1,0 +1,35 @@
+/*
+Eloquent JavaScript Exercise: Chess Board
+
+Uses a variable to create a chess board of hash marks.
+
+
+*/
+
+//Variables
+var size = 8;           //Holds the width/height measurement
+var evenHashString = ""; //Holds the hash string used for even rows
+var oddHashString = "";  //Holds the hash string used for odd rows
+
+//Creates the hash string for the even rows
+for(let i = 0;i < size;i++){
+        var evenHash = "# ";
+        evenHashString = evenHash + evenHashString;
+}
+
+//Creates the hash string for the odd rows
+for(let i = 0;i < size;i++){
+        var oddHash = " #";
+        oddHashString = oddHash + oddHashString;
+}
+
+//Outputs odd and even rows of hash strings
+//to create a chess board of hash marks
+for (let i = 0;i<size;i++){
+    if (i % 2){
+        console.log(evenHashString);
+    }
+    else{
+        console.log(oddHashString);
+    }
+}
